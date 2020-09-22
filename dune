@@ -1,0 +1,9 @@
+(library
+  (name ipaddr_ext)
+  (modules ipaddr_ext)
+  (libraries ipaddr containers))
+
+(test
+  (name test_ipaddr_ext)
+  (modules test_ipaddr_ext)
+  (libraries ipaddr_ext alcotest))
